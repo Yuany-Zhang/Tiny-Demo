@@ -1,0 +1,9 @@
+read x; { input an integer }
+for x:=11 downto y+5 do 
+ fact := 2;
+ repeat
+  fact := fact * x;
+  x := x % 2
+ until x = 0;
+ write fact { output factorial of x }
+enddo

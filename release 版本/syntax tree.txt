@@ -1,0 +1,24 @@
+Syntax tree:
+  Read: x
+  For(To 1)
+    Assign to: x
+    Const: 11
+    Assign to: y
+      Const: 5
+    Do
+      Assign to: fact
+        Const: 2
+      Repeat
+        Assign to: fact
+          Op: *
+            Id: fact
+            Id: x
+        Assign to: x
+          Op: %
+            Id: x
+            Const: 2
+        Op: =
+          Id: x
+          Const: 0
+      Write
+        Id: fact
